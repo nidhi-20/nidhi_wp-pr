@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Web Site</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=2">
+<style>	
+* {
+  box-sizing: border-box;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color:#ccccff;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:#d9ffb3;
+  color:white;
+}
+header {
+  background-color:	 #ccffff;
+  padding: 25px;
+  text-align: center;
+  font-size: 35px;
+  color:purple;
+}
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background:black;
+  padding: 60px;
+  color: white;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+  height: 300px;
+  
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+  background-color: #ccffff;
+  padding: 30px;
+  text-align: center;
+  color: purple;
+}
+@media (max-width: 100px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+p{
+	color: grey;
+}
+
+</style>
+</head>
+<body>
+<header>
+  <h2>ICECREAM CAFE</h2>
+</header>
+<section>
+  <nav>
+    Contact Us....
+      <ul>
+      	<li><a href="#">12345678</a></li>
+      	<li><a href="#">12345678</a></li>
+      	<li><a href="#">12345678</a></li>
+      </ul>
+  </nav>
+   <article>
+    <h1>About Icecream Cafe</h1>
+    <p>Welcome to our Icecream Cafe ...Here you will find ice cream of all tastes.Like Vanilla,Chocolate,Strawberry,Cherry Macaron,Chocolate Almond,Banana Nut Fudge,Black Walnut,Pineapple Etc....Here All Icecream is delicious.....</p>
+<center>
+	<form>
+    <label>FirstName:</label>
+  <input type="text" name="fname" placeholder="FirstName"><br>
+ <label>LastName:</label>
+  <input type="text" name="lname" placeholder="LastName"><br>
+ <label>Phone Number:</label>
+ <input type="tel" id="phone" name="phone" placeholder="123-45-678"><br>
+ <button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+ txt = "thank";
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</form>
+</center>
+  </article>
+</section>
+<footer>
+  <p>Thanks For Visit.....</p>
+</footer>
+
+</body>
+</html>

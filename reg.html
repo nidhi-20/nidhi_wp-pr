@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		h3{
+			font-family:  'Akaya Telivigala', cursive;
+			font-size: 30px;
+		}
+		h1{
+			font-family: 'Dancing Script', cursive;
+		}
+		body {
+  background-image: url("yum.jpg");
+  background-size:80%;
+}
+footer{
+	color: white;
+}
+	</style>
+	<title>Registration Page</title>
+</head>
+<body>
+<form name="myform"onsubmit="return validateForm()" method="post">
+	<center>
+	<h3>Registration Page</h3>
+	<hr>
+		<label>First name</label>
+		<input type="text" name="Fname" placeholder="Enter Fname" required>
+		<br>
+
+		<label>Last Name</label>
+		<input type="Lname" name="Lname" placeholder="Enter Lname" required>
+		<br><br>
+		<label>E-mail:</label>
+		<input type="email" name="email" placeholder="enter email" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<label>Phone/Mobile No:</label>
+		 <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+		 <br><br>
+		 <label>What Your favorite Ice-Cream Flavour:</label>
+		 <select name="Ice-Cream" id="Ice-Cream">
+    <optgroup label="HAVEMORE">
+      <option value="block bustter">Block Buster</option>
+      <option value="Almond Mocha">Almond Mocha</option>
+      <option value="choco truffle">Choco Truffle</option>
+      <option value="cookie cream">cookie cream</option>
+      <option value="creamy pistatio">creamy pistatio</option>
+    </optgroup>
+    <optgroup label="Cream Bell">
+      <option value="fantasia">fantasia</option>
+      <option value="funtwist">funtwist</option>
+       <option value="sacch much">saach much</option>
+       <option value="strawberry">strawberry</option>
+   </optgroup>
+</select>
+<br>
+			<label>Order Date:</label>
+			<input type="date" id="Order" name="Order" required>
+			<br><br><br>
+	Give FeedBack:
+	<input type="text" name="feedback" placeholder="FeedBack.......">
+			<hr>
+			<br><br>
+		<input type="submit" name="submit">
+		<footer>
+			<h1>Thanks for Visit....</h1>
+		</footer>
+
+
+</center>
+</form>
+</body>
+</html>
